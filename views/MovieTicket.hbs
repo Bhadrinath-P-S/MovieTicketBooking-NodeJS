@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <title>MOVIE TICKET BOOKING</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 103.2px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+    color: whitesmoke;
+  }
+
+  .button {
+    font-size: 14;
+    border: 1px solid rgba(13, 9, 0, 0.491);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    bottom: 115px;
+    height: 25;
+    width: 90;
+    top: 1px;
+  }
+
+  .button:hover {
+    background-color: #f44336;
+    color: white;
+  }
+</style>
+
+<body>
+
+  <header style="background-color:Red; height:100px; width:100%; Padding-top:5px">
+
+    <center><strong>
+        <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+      </strong></center>
+
+    <marquee><strong>
+        <h11 style="color:white;">Grab The Movies You Want !!!</h11>
+      </strong></marquee><br>
+
+    <link rel="stylesheet" href="style.css">
+
+    {{> navbar}}
+    {{!-- <ul>
+      <li><a class="active" href="Intro Page.html">HOME</a></li>
+      <li><a href="Movie Now Showing.html">MOVIES NOW SHOWING</a></li>
+      <li><a href="Theatre.html">THEATRE</a></li>
+      <li><a href="Contact Us.html">CONTACT US</a></li>
+      <li><a href="Intro Page.html">LOG OUT</a></li>
+    </ul> --}}
+
+    <body background="https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg">
+
+
+      <center><br>
+        <fieldset style="background-color:rgba(0, 0, 0, 0.632);border-radius:5% ; height:490px; width:25%;">
+          <legend>
+            <h2 style="color:rgb(254, 254, 255);">BOOKING PAGE</h2>
+          </legend>
+          <table>
+            <tr>
+              <td>
+
+                &nbsp;&nbsp;<img
+                  src="https://featuredanimation.com/wp-content/uploads/2021/06/Luca-waving-half-under-water-Pixar-Movie-Poster-2021.jpg"
+                  width=80 height=110>
+              </td>
+              <td>
+                &nbsp;&nbsp;<img
+                  src="https://imgix.ranker.com/user_node_img/585/11694849/original/11694849-photo-u23?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375"
+                  width=80 height=110>
+              </td>
+              <td>
+                &nbsp;&nbsp;<img
+                  src="https://imgix.ranker.com/user_node_img/114/2268400/original/2268400-photo-u63?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375"
+                  width=80 height=110>
+              </td>
+              <td>
+                &nbsp;&nbsp;<img
+                  src="https://m.media-amazon.com/images/M/MV5BNGU1NGNiYzYtMTQ2Ni00M2ZlLTg0N2QtMDFhMzNjNzcyMGYyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                  width=80 height=110>
+              </td>
+            </tr>
+          </table>
+
+          <form id="form" name="form" action="/Bookseat">
+            <h4 style="color:Orange;">Choose a Movie</h4>
+            <label for="  movie"></label>
+            <select id="  movie" name="  movie" style="border-radius:12px; height:22; width: 200;" required>
+              <option value="" disabled selected hidden>Select a Movie</option>
+              <option value="  Luca">Luca</option>
+              <option value="  How to train your dragon">How to train your dragon</option>
+              <option value="  Toy story">Toy story</option>
+              <option value="  tde croods">The croods</option>
+            </select>
+
+            <h4 style="color:Pink;">Type show Date & Time</h4>
+            <input type="date" id="moviedate" name="movie" placeholder="dd-mm-yyyy" style="border-radius:10px;" required
+              style="border-radius:10px;width:75;height:25;"><br>
+            <input type="time" id="movie_time" name="movie_time" placeholder="hr:mm:ss" required
+              style="border-radius:10px;width:99;height:25;">
+            <h4 style="color:yellowgreen;">Click Here To Select The Seats</h4>
+
+            <input type="submit" class="BUTTON" value="Book Seat">
+          </form>
+        </center>
+      </fieldset>
+    </body>
+
+</html>

@@ -1,0 +1,370 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+<style>
+  button {
+    border: 2px solid rgba(248, 243, 243, 0.445);
+    border-radius: 15px;
+    color: wheat;
+    background-color: #000;
+    position: absolute;
+    left: 18px;
+    width: 5%;
+    height: 40px;
+    top: 150px;
+  }
+
+  .btn:hover {
+    background-color: #04AA6D;
+  }
+
+  .img,
+  .video {
+    display: inline-block;
+    margin-top: 4.5%;
+    box-shadow: 0 6px 10px 0 rgba(228, 36, 36, 0.442), 0 8px 20px 0 rgba(251, 47, 47, 0.448);
+    margin-left: 0.6%;
+    margin-bottom: 15px;
+  }
+
+  .title0 {
+    margin-left: 1%;
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .title {
+    margin-left: 10px;
+    color: yellow;
+    width: 300px;
+  }
+
+  .title0,
+  .title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mov-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.4%;
+    color: white;
+    font-size: large;
+    width: 50%;
+  }
+
+  .mov-desc p {
+    line-height: 1.35;
+    width: 185%;
+    background-color: rgba(0, 0, 0, 0.653);
+    padding: 5px 20px 15px 20px;
+    border-radius: 20px;
+    text-align: justify;
+  }
+
+  .topcast {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 62px;
+  }
+
+  .topcast img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px 0 rgba(228, 36, 36, 0.442), 2px 2px 20px 2px rgba(251, 47, 47, 0.37);
+  }
+
+  .topcast label {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 32%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 49%;
+  }
+
+  .review {
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 33%, 4%, 0.625);
+    box-shadow: 0 0px 5px rgba(68, 30, 30, 0.44);
+    border-radius: 15px;
+    padding: 10px 10px 0px 30px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .card__head {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .card__head img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgb(246, 107, 107);
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .card__heading {
+    color: white;
+    font-size: 18px;
+  }
+
+  .card__rating {
+    color: yellow;
+    padding-left: 400px;
+    font-size: larger;
+  }
+
+  .card__rating .notchecked {
+    color: rgb(255, 255, 255);
+  }
+
+  .card__detail {
+    color: hsla(0, 0%, 81%, 0.852);
+    line-height: 1.3;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: justify;
+    width: 670px;
+  }
+</style>
+
+<body>
+
+  <header style="background-color:Red; height:100px; width:100%; Padding-top:5px">
+    <center><strong>
+        <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+      </strong></center>
+    <marquee><strong>
+        <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+      </strong></marquee>
+    <hr style="margin-top: -1px;">
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; left: 115px; color: White;">
+      <b>COCO<br>2017 * G * 1h 45m</b>
+    </div>
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; right: 30px; color:White;">
+      <b>IMDb RATING<br><img src="http://clipart-library.com/images/pToax64yc.png" style="width: 15px; height: 15px;">
+        8.4/10</b>
+    </div>
+
+    <div
+      style="font-family:'Times New Roman', Times, serif; position: absolute; top: 150px; right: 180px; color:White;">
+      <b>POPULARITY<br><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZg1ruDaQpRdt1W1xmA62jisVypsLaPSVdA&usqp=CAU"
+          style="position:absolute; width: 15px; height: 15px; top: 20px;">
+        &nbsp;&nbsp;&nbsp;&nbsp; 912 ^ 99</b>
+    </div>
+
+    <div>
+      <a href="/MovieNowShowing">
+        <button type="button" class="btn">BACK</button></a>
+    </div>
+
+    <body
+      style="background-image: linear-gradient(rgb(0, 0, 0, 0.50),rgb(0, 0, 0, 0.50)), url(https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg);">
+
+      <div class="img">
+        <img src="https://i.pinimg.com/736x/52/40/93/52409341203bb9276ec911ebbda4f91d.jpg"
+          style="width: 388px; height:500px;">
+      </div>
+
+      <div class="video">
+        <video width="1080px" height="500" controls>
+          <source src="/video/Coco_Official_Final_Trailer_1080P_HD__AdobeExpress (3).mp4">
+          type="video/mp4">
+        </video>
+      </div>
+
+      <div class="grid">
+
+
+        <div class="Leftside">
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Movie Description </h1>
+
+          <div class="mov-desc">
+            <p>An aspiring young guitar player, whose family has a classic hate for music, tries to find answers of his
+              great Grandfather, which leads his search to his entrance to Tierra De Muertos, where all dead people get
+              to live if they are remembered well.
+              <br><br>
+              Despite his family's baffling generations-old ban on music, Miguel dreams of becoming an accomplished
+              musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the
+              stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets
+              charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story
+              behind Miguel's family history.
+            </p>
+          </div>
+
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Top Cast </h1>
+          <div class="topcast">
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/anthony-gonzalez-1079595-23-11-2017-10-13-33.jpg"
+                style="margin-left: 30px;">
+              <label><b style="color: yellowgreen">Anthony Gonzalez</b> as Miguel Rivera</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gael-garcia-bernal-699-15-11-2017-02-24-29.jpg">
+              <label><b style="color: yellowgreen">Gael Garcia Bernal</b> as Hector</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/benjamin-bratt-14177-24-03-2017-17-29-19.jpg">
+              <label><b style="color: yellowgreen">Benjamin Bratt</b> as Ernesto de la Cruz</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/renee-victor-1079594-15-11-2017-03-27-10.jpg">
+              <label><b style="color: yellowgreen">Renee Victor</b> as Abuelita</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightside">
+          <h1 class="title0"> | </h1>
+          <h1 class="title"> Reviews </h1>
+
+          <div class="row">
+            <article class="card">
+              <div class="card__head">
+                <img
+                  src="http://resizing.flixster.com/XQiaR7Vsll0jgB61xGDsSRQebgo=/128x128/v1.Yzs0MDQzO3A7MTkzOTU7MjA0ODszODA7Mzgw">
+                <div class="card__user">
+                  <div class="name">Briean Eggert &nbsp;&nbsp;</div>
+                </div>
+                <div class="card__rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="card__detail">
+                Coco is a film that reminds us of the effect and importance of mise-en-scène, even when it has been
+                assembled by animators and computers. Coco bursts with color and life, just like we might expect of a
+                film by Pixar Animation Studios. 
+              </div>
+            </article>
+          </div>
+
+          <div class="row">
+            <article class="card">
+              <div class="card__head">
+                <img
+                  src="http://resizing.flixster.com/3RUlKtcZifTCQ719WQfH7CGViLw=/128x128/v1.Yzs0MDQ0O2o7MTkzOTU7MjA0ODsxMzUzOzEzNTM">
+                <div class="card__user">
+                  <div class="name">David Gonzalez</div>
+                </div>
+                <div class="card__rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star notchecked"></i>
+                  <i class="fa fa-star notchecked"></i>
+                </div>
+              </div>
+              <div class="card__detail">
+                An unexpectedly brilliant and dynamic story about lineage, connection, and self-discovery. I don't think
+                there's any question that Coco is really great.
+              </div>
+            </article>
+          </div>
+
+          <div class="row" style="margin-top: -5.5px;">
+            <article class="card">
+              <div class="card__head">
+                <img
+                  src="http://resizing.flixster.com/tKgyBpddvYQJUOwxO8JMpyiEX0A=/128x128/v1.YzszNjc5O2o7MTkzOTU7MjA0ODszMDA7MzAw">
+                <div class="card__user">
+                  <div class="name">Nathan Mattise</div>
+                </div>
+                <div class="card__rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star notchecked"></i>
+                </div>
+              </div>
+              <div class="card__detail">
+                It's just about a perfect combination of heart and authenticity (to a culture and place) in a story that
+                delivers laughs, gasps, and sniffles in ample amounts.
+              </div>
+            </article>
+          </div>
+
+          <div class="row">
+            <article class="card">
+              <div class="card__head">
+                <img
+                  src="http://resizing.flixster.com/eroFCFwvZVO29eIuiVtqAeU2jcQ=/128x128/v1.YzsyOTY3O2o7MTkzOTU7MjA0ODs3MjA7NzIw">
+                <div class="card__user">
+                  <div class="name">
+                    Robert Daniels</div>
+                </div>
+                <div class="card__rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star notchecked"></i>
+                  <i class="fa fa-star notchecked"></i>
+                </div>
+              </div>
+              <div class="card__detail">
+                In a country with an ever increasing Hispanic and Mexican population, a film like Coco should have come
+                around a long time ago.
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+
+      </div>
+
+    </body>
+
+</html>

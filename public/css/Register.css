@@ -1,0 +1,116 @@
+form {
+    position: absolute;
+    left: 505px;
+  }
+
+  label {
+    position: relative;
+    color: white;
+  }
+
+  fieldset {
+    display: block;
+    width: 440px;
+    padding-bottom: 30px;
+    margin-left: 25px;
+    margin-top: 145px;
+    background-color: rgba(14, 10, 10, 0.886);
+    border-radius: 10px;
+    border-color: rgba(242, 8, 8, 0.916);
+    box-shadow: 0 6px 10px 0 rgba(241, 8, 8, 0.269), 0 8px 22px 0 rgba(211, 9, 9, 0.26);
+  }
+
+  legend {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+  }
+
+  input[type=submit],
+  input[type=email],
+  input[type=uname],
+  input[type=tel],
+  input[type=password] {
+    border-radius: 5px;
+    height: 28px;
+    width: 200px;
+  }
+
+  input[placeholder] {
+    position: absolute;
+    padding-left: 10px;
+  }
+
+  input[type=checkbox] {
+    position: relative;
+    margin-left: 49px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  .BUTTON {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid rgba(250, 3, 3, 0.491);
+    cursor: pointer;
+  }
+
+  .BUTTON:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .mb-3 mt-3 p {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .mb-3 mt-3.error p {
+    visibility: visible;
+    color: rgba(212, 255, 0, 0.848);
+  }
+
+  .mb-3 mt-3.success p {
+    padding: 1px;
+    visibility: visible;
+  }
+
+  p {
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 2px;
+    width: 200px;
+    color: rgba(200, 255, 0, 0.871);
+  }
+
+  .ac {
+    position: absolute;
+    margin-top: 200px;
+    text-align: center;
+    color: rgb(250, 244, 244);
+  }
+
+  input[type=button] {
+    position: relative;
+    top: 20px;
+  }
+
+  .error {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:red;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.good {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:red;
+    font-size: 17px;
+    font-weight: 700;
+}

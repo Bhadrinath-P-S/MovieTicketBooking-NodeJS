@@ -1,0 +1,369 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+<style>
+  button {
+    border: 2px solid rgba(248, 243, 243, 0.445);
+    border-radius: 10px;
+    color: wheat;
+    background-color: #000;
+    position: absolute;
+    padding: 10px 18px;
+    margin-left: 10px;
+    top: 150px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #04AA6D;
+  }
+
+  .img,
+  .video {
+    display: inline-block;
+    margin-top: 4.5%;
+    box-shadow: 0 6px 10px 0 rgba(228, 36, 36, 0.442), 0 8px 20px 0 rgba(251, 47, 47, 0.448);
+    margin-left: 0.6%;
+    margin-bottom: 15px;
+  }
+
+  .title0 {
+    margin-left: 1%;
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .title {
+    margin-left: 10px;
+    color: yellow;
+    width: 300px;
+
+  }
+
+  .title0,
+  .title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mov-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.4%;
+    color: white;
+    font-size: large;
+    width: 50%;
+  }
+
+  .mov-desc p {
+    line-height: 1.35;
+    width: 185%;
+    background-color: rgba(0, 0, 0, 0.653);
+    padding: 5px 20px 15px 20px;
+    border-radius: 20px;
+    text-align: justify;
+  }
+
+  .topcast {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 62px;
+  }
+
+  .topcast img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px 0 rgba(228, 36, 36, 0.442), 2px 2px 20px 2px rgba(251, 47, 47, 0.37);
+  }
+
+  .topcast label {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 32%;
+    text-align: center;
+    color: white;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 49%;
+  }
+
+  .review {
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 33%, 4%, 0.625);
+    box-shadow: 0 0px 5px rgba(68, 30, 30, 0.44);
+    border-radius: 15px;
+    padding: 10px 10px 0px 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+
+  .card__head {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .card__head img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgb(246, 107, 107);
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .card__heading {
+    color: white;
+    font-size: 18px;
+  }
+
+  .card__rating {
+    color: yellow;
+    padding-left: 400px;
+    font-size: larger;
+  }
+
+  .card__rating .notchecked {
+    color: rgb(255, 255, 255);
+  }
+
+  .card__detail {
+    color: hsla(0, 0%, 81%, 0.852);
+    line-height: 1.3;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: justify;
+    width: 670px;
+  }
+</style>
+
+<body>
+
+  <header style="background-color:Red; height:100px; width:100%; Padding-top:5px">
+    <center><strong>
+        <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+      </strong></center>
+    <marquee><strong>
+        <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+      </strong></marquee>
+    <hr style="margin-top: -1px;">
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; left: 115px; color: White;">
+      <b>HOW TO TRAIN YOUR DRAGON<br>2019 * PG * 1h 44m</b>
+    </div>
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; right: 30px; color:White;">
+      <b>IMDb RATING<br><img src="http://clipart-library.com/images/pToax64yc.png" style="width: 15px; height: 15px;">
+        7.4/10</b>
+    </div>
+
+    <div
+      style="font-family:'Times New Roman', Times, serif; position: absolute; top: 150px; right: 180px; color:White;">
+      <b>POPULARITY<br><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZg1ruDaQpRdt1W1xmA62jisVypsLaPSVdA&usqp=CAU"
+          style="position:absolute; width: 15px; height: 15px; top: 20px;">
+        &nbsp;&nbsp;&nbsp;&nbsp; 2,879 ^ 165</b>
+    </div>
+
+    <div>
+      <a href="/MovieNowShowing">
+        <button type="button" class="btn">BACK</button></a>
+    </div>
+
+    <body
+      style="background-image: linear-gradient(rgb(0, 0, 0, 0.50),rgb(0, 0, 0, 0.50)), url(https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg);">
+
+      <div class="img">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzxaIK2qzAnjBsSP2wixHgOGU6dujLmwE0rqKb5MljPqZVrEWy"
+          style="width: 388px; height:500px;">
+      </div>
+
+      <div class="video">
+        <video width="1080px" height="500" controls>
+          <source src="/video/y2mate_com_-_HOW_TO_TRAIN_YOUR_DRAGON_THE_HIDDEN_WORLD__Official_Trailer_1080p_AdobeExpress (2).mp4">
+          type="video/mp4">
+        </video>
+      </div>
+
+      <div class="grid">
+
+
+        <div class="Leftside">
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Movie Description </h1>
+
+          <div class="mov-desc">
+            <p>Hiccup (Jay Baruchel) is a Norse teenager from the island of Berk, where fighting dragons is a way of
+              life. His progressive views and weird sense of humor make him a misfit, despite the fact that his father
+              (Gerard Butler) is chief of the clan.
+              <br><br>
+              Tossed into dragon-fighting school, he endeavors to prove himself as
+              a true Viking, but when he befriends an injured dragon he names Toothless, he has the chance to plot a new
+              course for his people's future.
+            </p>
+          </div>
+
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Top Cast </h1>
+          <div class="topcast">
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jay-baruchel-4787-18-03-2019-04-21-14.jpg"
+                style="margin-left: 30px;">
+              <label><b style="color: yellowgreen">Jay Baruchel </b>as Hiccup</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gerard-butler-740-24-03-2017-13-51-07.jpg">
+              <label><b style="color: yellowgreen">Gerard Butler </b>as Stoick</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/craig-ferguson-16901-18-03-2019-03-06-55.jpg">
+              <label><b style="color: yellowgreen">Craig Ferguson </b>as Gobber
+              </label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/america-ferrera-7112-18-03-2019-02-58-53.jpg">
+              <label><b style="color: yellowgreen">America Ferrera</b> as Astrid</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightside">
+          <h1 class="title0"> | </h1>
+          <h1 class="title"> Reviews </h1>
+
+          <div class="review">
+            <div class="row" style="margin-top: 5px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/jay-baruchel-4787-18-03-2019-04-21-14.jpg">
+                  <div class="card__user">
+                    <div class="name">Joe Morgens &nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star notchecked"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  The film feels like it's flying on empty. This is clearly the end of the franchise, one that gave
+                  great pleasure and stayed on too long.
+                </div>
+              </article>
+            </div>
+
+            <div class="row" style="margin-top: 2px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/SL_gwZOLxB_VQiiyfeD-4kGyR-Y=/128x128/v1.YzszMDYyO2o7MTkzOTU7MjA0ODsxNjkzOzE2MzM">
+                  <div class="card__user">
+                    <div class="name">Johnie Oleksin</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  If you love this series, it will really please you, where these characters end up. Not as interesting
+                  as the first two, but still a damn good movie.
+                </div>
+              </article>
+            </div>
+
+            <div class="row" style="margin-top: -5.5px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/c13SRBYTbhRU_-T57lJar1FkpwQ=/128x128/v1.YzsxMDAwMDAyNTk3O2o7MTk0NDk7MjA0ODs1MDA7NTAw">
+                  <div class="card__user">
+                    <div class="name">Britney Morni</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star notchecked"></i>
+                    <i class="fa fa-star notchecked"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  And although it's sad to know that this will be the final act in this journey, the ending is one that
+                  will certainly leave audiences with smiles on their faces.
+                </div>
+              </article>
+            </div>
+
+            <div class="row">
+              <article class="card" style="margin-top: -3px;">
+                <div class="card__head">
+                  <img
+                    src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/america-ferrera-7112-18-03-2019-02-58-53.jpg">
+                  <div class="card__user">
+                    <div class="name">Lonita Cook &nbsp;&nbsp;</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  You have all these photorealistic details in the background. If you like, you can see every grain of
+                  sand or every hair on the cheek of a character. It's just that realistic!
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </body>
+
+</html>

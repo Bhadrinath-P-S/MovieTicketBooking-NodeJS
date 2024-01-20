@@ -1,0 +1,236 @@
+<html>
+
+<body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+  </head>
+
+  <title> MoviesNowShowing </title>
+  
+  <style>
+    .moviegrip {
+      font-size: 35px;
+      color: Black;
+      background-color: red;
+      padding: 33px 0px;
+    }
+
+    marquee {
+      position: relative;
+      margin-top: -29px;
+      background-color: black;
+      padding: 2px;
+    }
+
+    .sticky-container {
+      position: sticky;
+      top: 0;
+    }
+
+    .movieName {
+      color: cyan;
+      margin-left: 20px;
+      font-size: 25px;
+    }
+
+    .movieName:hover {
+      color: red;
+    }
+
+    .column {
+      display: grid;
+      float: left;
+      padding-right: 15px;
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+
+    .movieNameUC {
+      position: relative;
+      bottom: 20px;
+      color: cyan;
+      margin-left: 20px;
+      font-size: 25px;
+      display: block;
+    }
+
+    .MovieNameUC:hover {
+      color: red;
+    }
+
+    .column1 {
+      position: relative;
+      bottom: 20px;
+      display: grid;
+      float: left;
+      padding-right: 15px;
+      padding-left: 5px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: -7px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 3px 101.5px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+      color: whitesmoke;
+    }
+
+    .zoom:hover {
+      transform: scale(1.02);
+    }
+
+    .button {
+      font-size: 15;
+      border: 1px solid rgba(13, 9, 0, 0.491);
+      border-radius: 15px;
+      margin-left: 46.9%;
+      height: 27px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-top: 2px;
+    }
+
+    .button:hover {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+
+  <body>
+
+    <div class="sticky-container">
+      <center><strong>
+          <h2 class="moviegrip">MOVIE GRIP</h2>
+        </strong></center>
+
+      <marquee><strong>
+          <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+        </strong></marquee>
+
+      {{> navbar}}
+      
+      {{!-- <ul>
+        <li><a class="active" href="/">HOME</a></li>
+        <li><a href="/MovieNowShowing">MOVIES NOW SHOWING</a></li>
+        <li><a href="Theatre.html">THEATRE</a></li>
+        <li><a href="Contact Us.html">CONTACT US</a></li>
+        <li><a href="Intro Page.html">LOGOUT</a></li>
+      </ul> --}}
+
+    </div>
+
+    <body background="https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg">
+
+      <div>
+        <h1 class="MovieName"> MOVIES NOW PLAYING </h1>
+      </div>
+
+      <div class="column">
+        <div class="zoom">
+          <a href="/Luca-Info">
+            <img src="https://www.kolpaper.com/wp-content/uploads/2021/07/Luca-Wallpaper-2.jpg"
+              style="width:350px; height: 480px; padding-left: 15px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="zoom">
+          <a
+            href="/How-To-Train-Your-Dragon-Info">
+            <img
+              src="https://imgix.ranker.com/user_node_img/585/11694849/original/11694849-photo-u23?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375"
+              style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="zoom">
+          <a href="/Toy-Story-Info">
+            <img
+              src="https://imgix.ranker.com/user_node_img/114/2268400/original/2268400-photo-u63?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=375"
+              style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="zoom">
+          <a href="/The-Croods-Info">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNGU1NGNiYzYtMTQ2Ni00M2ZlLTg0N2QtMDFhMzNjNzcyMGYyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+              style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <a href="/Theatre">
+          <input type="button" class="BUTTON" value="Book Ticket">
+        </a>
+      </div>
+
+      <br>
+      <div>
+        <h1 class="MovieNameUC"> UPCOMING MOVIES </h1>
+      </div>
+
+      <div class="column1">
+        <div class="zoom">
+          <a href="/Onward-Info">
+            <img src="https://m.media-amazon.com/images/I/71YwxjfhEiL._AC_SL1303_.jpg"
+              style="width:350px; height: 480px; padding-left: 15px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="zoom">
+          <a
+            href="/Coco-Info">
+            <img src="https://i1.wp.com/teaser-trailer.com/wp-content/uploads/Coco-1.jpg?ssl=1" style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="zoom">
+          <a href="/The-Mitchells-vs-the-Machines-Info">
+            <img src="https://pbs.twimg.com/media/Ex0A5HgUcAcuxm2.jpg" style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="zoom">
+          <a href="/Zootopia-Info">
+            <img src="https://i.pinimg.com/originals/e4/bb/97/e4bb97ed99a32328cbf3a9517845abb8.jpg"
+              style="width:350px; height: 480px;">
+          </a>
+        </div>
+      </div>
+  </body>
+</html>

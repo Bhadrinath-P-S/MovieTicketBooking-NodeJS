@@ -1,0 +1,371 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+<style>
+  button {
+    border: 2px solid rgba(248, 243, 243, 0.445);
+    border-radius: 10px;
+    color: wheat;
+    background-color: #000;
+    position: absolute;
+    padding: 10px 18px;
+    margin-left: 10px;
+    top: 150px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #04AA6D;
+  }
+
+  .img,
+  .video {
+    display: inline-block;
+    margin-top: 4.5%;
+    box-shadow: 0 6px 10px 0 rgba(228, 36, 36, 0.442), 0 8px 20px 0 rgba(251, 47, 47, 0.448);
+    margin-left: 0.6%;
+    margin-bottom: 15px;
+  }
+
+  .title0 {
+    margin-left: 1%;
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .title {
+    margin-left: 10px;
+    color: yellow;
+    width: 300px;
+
+  }
+
+  .title0,
+  .title {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mov-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.4%;
+    color: white;
+    font-size: large;
+    width: 50%;
+  }
+
+  .mov-desc p {
+    line-height: 1.35;
+    width: 185%;
+    background-color: rgba(0, 0, 0, 0.653);
+    padding: 5px 20px 15px 20px;
+    border-radius: 20px;
+    text-align: justify;
+  }
+
+  .topcast {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 62px;
+  }
+
+  .topcast img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px 0 rgba(228, 36, 36, 0.442), 2px 2px 20px 2px rgba(251, 47, 47, 0.37);
+  }
+
+  .topcast label {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 32%;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+   .review {
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 33%, 4%, 0.625);
+    box-shadow: 0 0px 5px rgba(68, 30, 30, 0.44);
+    border-radius: 15px;
+    padding: 10px 10px 0px 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+
+  .card__head {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .card__head img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgb(246, 107, 107);
+  }
+
+  .name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .card__heading {
+    color: white;
+    font-size: 18px;
+  }
+
+  .card__rating {
+    color: yellow;
+    padding-left: 400px;
+    font-size: larger;
+  }
+
+  .card__rating .notchecked {
+    color: rgb(255, 255, 255);
+  }
+
+  .card__detail {
+    color: hsla(0, 0%, 81%, 0.852);
+    line-height: 1.3;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: justify;
+    width: 670px;
+  }
+</style>
+
+<body>
+
+  <header style="background-color:Red; height:100px; width:100%; Padding-top:5px">
+    <center><strong>
+        <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+      </strong></center>
+    <marquee><strong>
+        <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+      </strong></marquee>
+    <hr style="margin-top: -1px;">
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; left: 115px; color: White;">
+      <b>THE MITCHELLS vs THE MACHINES<br>2021 * PG * 1h 54m</b>
+    </div>
+
+    <div style="font-family:'Times New Roman', Times, serif;position:absolute; top: 150px; right: 30px; color:White;">
+      <b>IMDb RATING<br><img src="http://clipart-library.com/images/pToax64yc.png" style="width: 15px; height: 15px;">
+        7.6/10</b>
+    </div>
+
+    <div
+      style="font-family:'Times New Roman', Times, serif; position: absolute; top: 150px; right: 180px; color:White;">
+      <b>POPULARITY<br><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZg1ruDaQpRdt1W1xmA62jisVypsLaPSVdA&usqp=CAU"
+          style="position:absolute; width: 15px; height: 15px; top: 20px;">
+        &nbsp;&nbsp;&nbsp;&nbsp; 1,727 ^ 333</b>
+    </div>
+
+    <div>
+      <a href="/MovieNowShowing">
+        <button type="button" class="btn">BACK</button></a>
+    </div>
+
+    <body
+      style="background-image: linear-gradient(rgb(0, 0, 0, 0.50),rgb(0, 0, 0, 0.50)), url(https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg);">
+
+      <div class="img">
+        <img src="https://www.themoviedb.org/t/p/original/vqGcStV8DOBgF4QiuC6YfpCsBAO.jpg"
+          style="width: 388px; height:500px;">
+      </div>
+
+      <div class="video">
+        <video width="1080px" height="500" controls>
+          <source src="/video/The_Mitchells_vs__The_Machines___Official_Trailer___Netflix_1080P_HD__AdobeExpress (3).mp4">
+          type="video/mp4">
+        </video>
+      </div>
+
+      <div class="grid">
+
+
+        <div class="Leftside">
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Movie Description </h1>
+
+          <div class="mov-desc">
+            <p>
+              An animated action-comedy about an ordinary family who find themselves in the middle of their biggest
+              family challenge yet. Saving the world from the robot apocalypse. It all starts when
+              creative outsider Katie Mitchell is accepted into the film school of her dreams and is eager to leave home. 
+              when her nature-loving dad insists on having the whole family drive her to school
+              and bond during one last totally-not-awkward-or-forced road trip. 
+              <br><br>
+              But just when the trip can't get any
+              worse, the family suddenly finds itself in the middle of the robot uprising. Everything from smart phones,
+              to roombas, to evil Furbys are employed to capture every human on the planet. Now it's up to the
+              Mitchells, but simple-minded robots to save humanity.
+            </p>
+          </div>
+
+          <h1 class="title0"> | </h1>
+
+          <h1 class="title"> Top Cast </h1>
+          <div class="topcast">
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/abbi-jacobson-1076908-03-10-2017-10-21-47.jpg"
+                style="margin-left: 30px;">
+              <label><b style="color: yellowgreen">Abbi Jacobson </b>as Katie</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/maya-rudolph-1427-07-05-2018-01-57-37.jpg">
+              <label><b style="color: yellowgreen">Maya Rudolph </b>as Linda Mitchell</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/olivia-colman-28264-27-04-2017-15-31-55.jpg">
+              <label><b style="color: yellowgreen">Olivia Colman </b>as PAL</label>
+            </div>
+            <div class="cast">
+              <img
+                src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/fred-armisen-5556-24-08-2016-05-41-44.jpg">
+              <label><b style="color: yellowgreen">Fred Armisen </b>as Deborahbot</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightside">
+          <h1 class="title0"> | </h1>
+          <h1 class="title"> Reviews </h1>
+
+          <div class="review">
+            <div class="row" style="margin-top: 5px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/LFuwYWrZPi93PxevJ_7eS7P1-ME=/128x128/v1.YzsxMDAwMDAyNzA5O2o7MTk0NDk7MjA0ODsyOTY7Mjk2">
+                  <div class="card__user">
+                    <div class="name">Richard Whitt</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star notchecked"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  Putting the "fun" in "dysfunction" is what The Mitchells vs. The Machines is about, and what family doesn't have some issues?
+                </div>
+              </article>
+            </div>
+
+            <div class="row" style="margin-top: -6px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/_LJT01h8c-DLXIuhwFhz8Ls6dtA=/128x128/v1.YzsxMDAwMDAyNzYyO3A7MTk0NDk7MjA0ODsyOTk7Mjk5">
+                  <div class="card__user">
+                    <div class="name">Rose Bryant &nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  The Mitchells vs. the Machines is a fun, family-friendly subversion of “sci-fi disaster” stories with a 
+                  wholly compelling emotional core and vibrant voice work from the entire ensemble.
+                </div>
+              </article>
+            </div>
+
+            <div class="row" style="margin-top: -2px;">
+              <article class="card">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/WgP4hmLJ8tnyV44NrzoptvHukQQ=/128x128/v1.YzszOTMzO2o7MTk0NDA7MjA0ODsxMDgwOzEwODA">
+                  <div class="card__user">
+                    <div class="name">Damian Levy &nbsp;</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star notchecked"></i>
+                    <i class="fa fa-star notchecked"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  Whether it's tears of joy or tears of sadness, Mitchells vs the Machines will have you shedding a few of either or both.
+                </div>
+              </article>
+            </div>
+
+            <div class="row">
+              <article class="card" style="margin-top: -9px;">
+                <div class="card__head">
+                  <img
+                    src="http://resizing.flixster.com/mCvzYrf66BKfzM2tHJ8dQAsXAxY=/128x128/v1.YzsyOTIxO2o7MTk0NDA7MjA0ODs2NDY7NjQ2">
+                  <div class="card__user">
+                    <div class="name">Jodie Hare &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="card__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star notchecked"></i>
+                  </div>
+                </div>
+                <div class="card__detail">
+                  In its celebration of these characters... this film demonstrates how indispensable every single one 
+                  of us is, and how much those living with disabilities have to offer the world, if only people took the time to notice.
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </body>
+
+</html>

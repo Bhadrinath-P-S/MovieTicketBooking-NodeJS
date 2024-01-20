@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+<body background="https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg">
+
+    <header style="background-color: Red; height: 100px; width: 100%; Padding-top: 5px">
+
+        <center><strong>
+                <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+            </strong></center>
+
+        <marquee><strong>
+                <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+            </strong></marquee>
+        <hr style="position: relative; top: -8px;">
+
+        <form id="form" action="/auth/Login" method="post">
+            <center>
+                <fieldset>
+
+                    <legend>
+                        <h1 style="color:White;">WELCOME</h1>
+                    </legend>
+                    {{#if msg}}
+        <p class="{{msg_type}}">{{msg}}</p>
+        {{/if}}
+                    <div class="mb-3 mt-3">
+                        <label for="email" style="color: white; display: block; font-size: 17px;">Email or Username</label>
+                        <i style="position: relative; color: black; left: 25px; top: 1.5px;" class="fa fa-user"></i>
+                        <input type="text" class="form-control" id="Email" placeholder="Enter Email" name="Email"
+                            style=" border-radius: 6px; height:22.5px; width:210px; padding-left: 25px; margin-right: 13px;">
+                        <p></p>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="pwd" style="color: white; margin-top: 10px; display: block; font-size: 17px;">Password</label>
+                        <i style="position: relative; color: black; left: 25px; top: 1.5px;" class="fa fa-lock"></i>
+                        <input type="password" class="form-control" id="Password" placeholder="Enter password" name="Password"
+                            style=" border-radius: 6px; height:23px; width:210px; padding-left: 25px; margin-right: 13px;">
+                        <p></p>
+                    </div>
+
+                    <button class="BUTTON" value="Login">Login</button><br>
+                    
+                    <a href="#" class="forgotpass"> Forgot Password? </a>
+                    <hr style="position: relative; bottom: -4%; color: white; border-radius: 100px;">
+
+                    <h9 style="color:White; position: relative; bottom: -11;">Don't have an account ?</h9>
+                  
+                    <a href="/Register">
+                        <input type="button" class="BUTTON1"; value="Register">
+                    </a>
+                  
+                </fieldset>
+            </center>
+        </form>
+    
+</body>
+
+</html>

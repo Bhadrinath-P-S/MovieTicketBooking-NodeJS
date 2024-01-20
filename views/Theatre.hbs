@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3172/3172555.png" type="image/x-icon">
+</head>
+
+  <script>
+    var state1 = {
+      "Tamilnadu": {
+        "Salem": ["Inox Cinemas Salem", "Aascars Multiplex", "ARRS Multiplex Theater", "Kailash Prakash Theater", "K.S Theatre"],
+        "Chennai": ["Jazz Cinemas LUXE", "Mayajaal Multiplex", "PVR Cinemas Skywalk, Chennai", "Sathyam Cinemas", "Sangam Cinemas", "Rakki Cinemas"],
+      }
+    }
+    window.onload = function () {
+      var state = document.getElementById("state");
+      var City = document.getElementById("City");
+      var Theatre = document.getElementById("Theatre");
+      for (var x in state1) {
+        state.options[state.options.length] = new Option(x, x);
+      }
+      state.onchange = function () {
+        //empty Chapters- and Topics- dropdowns
+        Theatre.length = 1;
+        City.length = 1;
+        //display correct values
+        for (var y in state1[this.value]) {
+          City.options[City.options.length] = new Option(y, y);
+        }
+      }
+      City.onchange = function () {
+        //empty Chapters dropdown
+        Theatre.length = 1;
+        //display correct values
+        var z = state1[state.value][this.value];
+        for (var i = 0; i < z.length; i++) {
+          Theatre.options[Theatre.options.length] = new Option(z[i], z[i]);
+        }
+      }
+    }
+
+  </script>
+</head>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 103.2px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+    color: whitesmoke;
+  }
+
+  .btn {
+    position: relative;
+    top: 5px;
+    border: 1px solid rgba(13, 9, 0, 0.491);
+    border-radius: 25px;
+    height: 25;
+    width: 90;
+    font-size: 14;
+  }
+
+  .btn:hover {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+
+  fieldset {
+    background-color: rgba(7, 2, 0, 0.692);
+    border-radius: 5%;
+    height: 310px;
+    width: 27%;
+    box-shadow: 0 6px 10px 0 rgba(241, 8, 8, 0.269), 0 8px 22px 0 rgba(211, 9, 9, 0.26);
+  }
+</style>
+
+<body>
+
+  <header style="background-color:Red; height:100px; width:100%; Padding-top:5px">
+
+    <center><strong>
+        <h2 style="font-size:35px; color:Black;">MOVIE GRIP</h2>
+      </strong></center>
+
+    <marquee><strong>
+        <h11 style="color:White; ">Grab The Movies You Want !!!</h11>
+      </strong></marquee>
+
+    {{> navbar}}
+    {{!-- <ul>
+      <li><a class="active" href="Intro Page.html">HOME</a></li>
+      <li><a href="Movie Now Showing.html">MOVIES NOW SHOWING</a></li>
+      <li><a href="Theatre.html">THEATRE</a></li>
+      <li><a href="Contact Us.html">CONTACT US</a></li>
+      <li><a href="Intro Page.html">LOG OUT</a></li>
+    </ul> --}}
+
+
+    <center>
+
+      <body background="https://c1.wallpaperflare.com/preview/570/413/91/interior-theatre-theater-empty-theater.jpg">
+    </center>
+
+    <form name="location" id="location" action="/MovieTicket">
+      <center><br><br><br><br><br>
+        <fieldset>
+          <legend>
+            <h2 style="color:White; text-align:end;">Select Your Favorite Theatre</h2>
+          </legend>&nbsp;
+          <label for="Select your state">
+            <h9 style="color:White; font-size: 19;">Select your state</h9>
+          </label><br>
+          <select name="state" id="state" style="border-radius: 6px; height:25px; width:230px ;" required>
+            <option value="" selected="selected">Pick Your state</option>
+          </select>
+          <br><br>
+          <label for="Select your City">
+            <h9 style="color:White; font-size: 19;">Select your City</h9>
+          </label><br>
+          <select name="City" id="City" style="border-radius: 6px; height:25px; width:230px ;" required>
+            <option value="" selected="selected">Pick Your City</option>
+          </select>
+          <br><br>
+          <label for="Select your Theatre">
+            <h9 style="color:White; font-size: 19;">Select your Theatre</h9>
+          </label><br>
+          <select name="Theatre" id="Theatre" style="border-radius: 6px; height:25px; width:230px ;" required>
+            <option value="" selected="selected">Pick Your Favorite Theatre</option>
+          </select>
+          <br><br> &nbsp;
+            <input type="submit" class="btn" onclick=" return validate()" value="Book Now">
+        </fieldset>
+      </center>
+    </form>
+</body>
+
+</html>
